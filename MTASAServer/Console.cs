@@ -16,6 +16,6 @@ namespace MTASAServer
 {
     public static class Console
     {
-        static void output(string msg) { } // outputConsole(msg)
+        public static void output(string msg) { } // outputConsole(msg)
     }
 }

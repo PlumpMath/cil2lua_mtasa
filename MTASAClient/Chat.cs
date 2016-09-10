@@ -16,6 +16,6 @@ namespace MTASAClient
 {
     public static class Chat
     {
-        static void output(string msg) { } // outputChatBox(msg)
+        public static void output(string msg) { } // outputChatBox(msg)
     }
 }

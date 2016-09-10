@@ -16,7 +16,7 @@ namespace MTASAShared
 {
     public static class Fps
     {
-        static int getLimit() { return 0; } // getFPSLimit()
-        static bool setLimit(int fpsLimit) { return true; } // setFPSLimit(fpsLimit)
+        public static int getLimit() { return 0; } // getFPSLimit()
+        public static bool setLimit(int fpsLimit) { return true; } // setFPSLimit(fpsLimit)
     }
 }
