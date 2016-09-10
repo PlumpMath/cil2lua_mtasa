@@ -19,7 +19,7 @@ namespace MTASAShared
         public float x, y, z;
         public Vector3(float x = 0.0f, float y = 0.0f, float z = 0.0f) { } // Vector3(x, y, z)
 
-        // local resultVector3 = vector3:cross(anotherVector3)
+        // vector3:cross(anotherVector3)
         public Vector3 cross(Vector3 rhs) { return new Vector3(); }
     }
 }
