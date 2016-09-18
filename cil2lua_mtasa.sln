@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTASAServer", "MTASAServer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTASAShared", "MTASAShared\MTASAShared.csproj", "{8118FE04-7235-4D9D-8E67-D511E5B0D61A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lua", "Lua\Lua.csproj", "{06A29B20-DAF6-49FC-AFE6-0FE932EC35F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8118FE04-7235-4D9D-8E67-D511E5B0D61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8118FE04-7235-4D9D-8E67-D511E5B0D61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8118FE04-7235-4D9D-8E67-D511E5B0D61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06A29B20-DAF6-49FC-AFE6-0FE932EC35F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06A29B20-DAF6-49FC-AFE6-0FE932EC35F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06A29B20-DAF6-49FC-AFE6-0FE932EC35F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06A29B20-DAF6-49FC-AFE6-0FE932EC35F3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

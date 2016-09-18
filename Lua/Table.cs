@@ -12,12 +12,10 @@ You should have received a copy of the GNU General Public License
 along with cil2lua_mtasa.If not, see <http://www.gnu.org/licenses/>.
 */
 
-using Lua;
-
-namespace MTASAShared
+namespace Lua
 {
-    public class Element : Userdata
+    public class Table : Value
     {
-        public Vector3 position, rotation;
+        
     }
 }
