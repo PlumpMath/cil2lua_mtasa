@@ -18,6 +18,17 @@ namespace MTASAShared
 {
     public class Element : Userdata
     {
+        public static Element client;       // "client" in event server-side event handlers
+        public static Element localPlayer;  // client-side "localPlayer" element
+        public static Element root;         // "root" element
+        public static Element resourceRoot; // "resourceRoot" element
+        public static Element guiRoot;      // "guiRoot" element
+
         public Vector3 position, rotation;
+
+        public void triggerEvent(string eventName, params Value[] args) { }                             // triggerEvent(eventName, this, ...)
+        public void triggerClientEvent(string eventName, params Value[] args) { }                       // triggerClientEvent(getRootElement(), eventName, this, ...)
+        public void triggerClientEvent(Element sendTo, string eventName, params Value[] args) { }       // triggerClientEvent(sendTo, eventName, this, ...)
+        public void triggerServerEvent(string eventName, params Value[] args) { }                       // triggerServerEvent(eventName, this, ...)
     }
 }

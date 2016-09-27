@@ -16,6 +16,17 @@ namespace Lua
 {
     public class Table : Value
     {
-        
+        public static Table _G; // A table of all global variables
+
+        void insert(Value value) { }
+        void insert(int index, Value value) { }
+
+        // value = table[key]
+        // table[key] = value
+        public object this[Value key]
+        {
+            get { return new Value(); }
+            set { }
+        }
     }
 }

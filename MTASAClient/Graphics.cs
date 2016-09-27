@@ -12,16 +12,10 @@ You should have received a copy of the GNU General Public License
 along with cil2lua_mtasa.If not, see <http://www.gnu.org/licenses/>.
 */
 
-using Lua;
-
-namespace MTASAShared
+namespace MTASAClient
 {
-    public class Vector3 : Userdata
+    public class Graphics
     {
-        public float x, y, z;
-        public Vector3(float x = 0.0f, float y = 0.0f, float z = 0.0f) { } // Vector3(x, y, z)
-
-        // vector3:cross(anotherVector3)
-        public Vector3 cross(Vector3 rhs) { return new Vector3(); }
+        public static void drawRectangle(int x, int y, int width, int height) { } // dxDrawRectangle(x, y, width, height)
     }
 }

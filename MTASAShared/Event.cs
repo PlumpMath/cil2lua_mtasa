@@ -16,12 +16,12 @@ using Lua;
 
 namespace MTASAShared
 {
-    public class Vector3 : Userdata
+    public class Event
     {
-        public float x, y, z;
-        public Vector3(float x = 0.0f, float y = 0.0f, float z = 0.0f) { } // Vector3(x, y, z)
-
-        // vector3:cross(anotherVector3)
-        public Vector3 cross(Vector3 rhs) { return new Vector3(); }
+        public delegate void EventCallbackFunc(params Value[] args);
+        public Event(string eventName, Element attachTo, EventCallbackFunc callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        // removeEventHandler(...) -- uses stored event name, attached to element and callback function to remove the event handler.
+        // The data is stored by adding predefined code in CILTlua for defining Event as a lua class that stores the input data and then uses it in removeEventHandler.
+        void remove() { }
     }
 }
