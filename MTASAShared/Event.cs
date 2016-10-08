@@ -13,13 +13,30 @@ along with cil2lua_mtasa.If not, see <http://www.gnu.org/licenses/>.
 */
 
 using Lua;
+using System;
 
 namespace MTASAShared
 {
     public class Event
     {
-        public delegate void EventCallbackFunc(params Value[] args);
-        public Event(string eventName, Element attachTo, EventCallbackFunc callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+        public Event(string eventName, Element attachTo, Action<Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value, Value> callbackFunc) { } // addEventHandler(eventName, attachTo, callbackFunc)
+
         // removeEventHandler(...) -- uses stored event name, attached to element and callback function to remove the event handler.
         // The data is stored by adding predefined code in CILTlua for defining Event as a lua class that stores the input data and then uses it in removeEventHandler.
         void remove() { }
